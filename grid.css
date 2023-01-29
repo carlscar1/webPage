@@ -1,0 +1,40 @@
+#mygrid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 40px 1fr 60px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "top top top top"
+    "left main main right"
+    "app app not not";
+    
+}
+
+span {
+  border: 1px solid red;
+}
+
+#top {
+  grid-area: top;
+}
+
+#left {
+  background: red;
+  grid-area: left;
+}
+#main {
+  background: blue;
+  grid-area: main;
+}
+#right {
+  background: yellow;
+  grid-area: right;
+}
+#app {
+  background: grey;
+  grid-area: app;
+}
+#not {
+  background: red;
+  grid-area: not;
+}
