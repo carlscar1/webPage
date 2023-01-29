@@ -1,40 +1,54 @@
 #mygrid {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 40px 1fr 60px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-columns: 30% 15% 40% 15%;
   grid-template-areas:
-    "top top top top"
-    "left main main right"
-    "app app not not";
-    
+    "area1 area2 area2 area2"
+    "area3 area4 area4 area5"
+    "area3 area6 area7 area7"
+    "area3 area8 area8 area8";
 }
 
 span {
   border: 1px solid red;
 }
 
-#top {
-  grid-area: top;
+#area1 {
+  grid-area: area1;
 }
 
-#left {
+#area2 {
   background: red;
-  grid-area: left;
+  grid-area: area2;
 }
-#main {
+
+#area3 {
   background: blue;
-  grid-area: main;
+  grid-area: area3;
 }
-#right {
+
+#area4 {
   background: yellow;
-  grid-area: right;
+  grid-area: area4;
 }
-#app {
+
+#area5 {
   background: grey;
-  grid-area: app;
+  grid-area: area5;
 }
-#not {
+
+#area6 {
   background: red;
-  grid-area: not;
+  grid-area: area6;
+}
+
+#area7 {
+  background: grey;
+  grid-area: area7;
+}
+
+#area8 {
+  background: yellow;
+  grid-area: area8;
 }
