@@ -21,6 +21,8 @@ span {
 #area2 {
   background: red;
   grid-area: area2;
+  text-align: center;
+  font-size: 35px;
 }
 
 #area3 {
@@ -34,7 +36,7 @@ span {
 }
 
 #area5 {
-  background: grey;
+  background: blue;
   grid-area: area5;
 }
 
