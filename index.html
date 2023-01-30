@@ -78,6 +78,13 @@ p {
   height: 100%;
   width: 40%;
 }
+wordDisp {
+  display: block;
+  padding: 100px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
 
 </style>
  </head>
@@ -93,10 +100,14 @@ p {
     </p>
     </span>
     <span id = "area4">
-       <table>
+       <table class = "wordDisp">
   <thead>
   </thead>
   <tbody>
+    <style> 
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+    
     <tr><th>Course Number </th>
     <th>Course Name </th>
     <th>Semester Taken </th>
