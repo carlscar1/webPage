@@ -1,7 +1,65 @@
 <html>
  <head>
+ <style> #mygrid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-columns: 30% 15% 40% 15%;
+  grid-template-areas:
+    "area1 area2 area2 area2"
+    "area3 area4 area4 area5"
+    "area3 area6 area7 area7"
+    "area3 area8 area8 area8";
+}
+
+span {
+  border: 1px solid black;
+}
+
+#area1 {
+  background: #ffcc66;
+  grid-area: area1;
+}
+
+#area2 {
+  background: #ff66ff;
+  grid-area: area2;
+  text-align: center;
+  font-size: 35px;
+}
+
+#area3 {
+  background: #9999ff;
+  grid-area: area3;
+}
+
+#area4 {
+  background: #ffffcc;
+  grid-area: area4;
+}
+
+#area5 {
+  background: #ff6699;
+  grid-area: area5;
+}
+
+#area6 {
+  background: #ccff99;
+  grid-area: area6;
+}
+
+#area7 {
+  background: #6699ff;
+  grid-area: area7;
+}
+
+#area8 {
+  background: #ffccff;
+  grid-area: area8;
+}</style>
  </head>
- <h1> Caroline Carlson</h1>
+ <h1> Caroline Carlson
+ </h1>
  <body>
    <div id = "mygrid">
     <span id = "area1">
