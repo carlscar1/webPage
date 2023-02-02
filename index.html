@@ -1,6 +1,7 @@
 <html>
  <head>
- <style> #mygrid {
+ <style> 
+ #mygrid {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 100px auto auto 100px;
@@ -22,10 +23,9 @@ span {
 }
 
 #area2 {
-  background: #ff66ff;
+  background: rgb(250, 102, 176);
   grid-area: area2;
   text-align: center;
-  font-size: 35px;
 }
 
 #area3 {
@@ -36,10 +36,17 @@ span {
 #area4 {
   background: #ffffcc;
   grid-area: area4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+table:hover{
+    background-color: blue;
+  }
 
 #area5 {
-  background: #ff6699;
+  background: hsla(221, 100%, 84%, 1);
   grid-area: area5;
 }
 
@@ -56,6 +63,11 @@ span {
 #area8 {
   background: #ffccff;
   grid-area: area8;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 p {
   display: block;
@@ -65,42 +77,66 @@ p {
   margin-right: 1em;
 }
 .center {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
-  width: 100%;
 }
 .centering {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
-  width: 40%;
+  height: 100px;
 }
 wordDisp {
-  display: block;
-  padding: 100px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.item {
+  flex-grow: 10;
 }
 
+
+
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/5ea9d4d037.js" crossorigin="anonymous"></script>
  </head>
  <body>
    <div id = "mygrid">
     <span id = "area1">
       <img src="picOfMeCold.img" alt="Picture of me" class = "centering">
     </span>
-    <span id = "area2">Caroline Carlson 123-248-0987</span>
+    <span id = "area2"><h1>Caroline Carlson 123-248-0987<i class="material-icons">phone</i></h1></span>
     <span id = "area3">
     <p>
-     This assignment.... talk about how you created the website
+     This assignment took me quite a while to work through and was fairly challenging to me because I have not actually
+     used HTML or CSS except for the small examples in class. Originally, I had the CSS and HTML files separate because
+     that seemed to be the easiest way to do it. However, once I wanted to actually deploy the code, it would not use
+     the CSS file how I wanted it to. So, I decided to have the CSS within the HTML and use the style tags to do so.</p>
+
+     <p>First, I designed the grid area and adjusted the colors and sizes so they fit the proportions outlined in the assignment.
+     Then, the first area I started with was the area 2 with my name and fake phone number, but I did not find the phone icon
+     until I got to area 8--where the other icons are. Then, I put my image in the area 1, but this was a struggle for a 
+     while because the photo was either too large or stretched the grid incorrectly. Once I remembered the height of the grid 
+     being 100px, I adjusted the picture to fix and stopped adjusting the width at all. For the this third area, I left for last
+     so I could explain how I created the site. Area 4 was not too difficult once I found some instructions on how to build tables
+     online, but adjusting the format was more difficult. Then, for area 5, I added a photo of machine code because of the CIS 351
+     class I took last semester. Area 6, I input a link to GVSU and Applied Innovation, where I am currently interning at. In area 7, 
+     I did not know what to put for multiple paragraphs, so I pasted in an exerpt from Harry Potter and the Sorcerer's Stone. Finally, 
+     for Area 8 with the icons was a little difficult to figure out for a bit, until I found a website called fontawesome that had very easy
+     ways to use the icons I needed. I then adjusted them using Flexbox. </p>
+     
+     <p>Overall, I definiely learned a lot about HTML and CSS and enjoyed this challenge. I think the most difficult part was formatting at times,
+       but I found many useful resources online as well as used the lecture slides to create this. 
     </p>
     </span>
     <span id = "area4">
-       <table class = "wordDisp">
+<table class = "wordDisp">
   <thead>
   </thead>
   <tbody>
@@ -189,7 +225,12 @@ Yet <b>Harry Potter</b> was still there, asleep at the moment, but not for long.
    </p>
     </span>
     <span id = "area8">
-    <a href= "https://twitter.com"></a>
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href = "https://github.com"><i class="fa-brands fa-github"></i></a>
+      <a href = "https://www.google.com"><i class="fa-brands fa-google"></i></a>
+      <a href = "https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href = "https://slack.com"><i class="fa-brands fa-slack"></i></a>
+      <a href = "https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
     </span>
 	</div>
  </body>
