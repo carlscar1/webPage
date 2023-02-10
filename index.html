@@ -1,3 +1,4 @@
+<!-- Kept in old html from other assignment to look back at -->
 <html>
  <head>
  <style> 
@@ -60,7 +61,7 @@ table:hover{
   grid-area: area7;
 }
 
-#area8 {
+#area8-table {
   background: #ffccff;
   grid-area: area8;
   display: flex;
@@ -90,21 +91,30 @@ p {
   margin-right: auto;
   height: 100px;
 }
-wordDisp {
+.wordDisp {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  width: 100%;
 }
 .item {
   flex-grow: 10;
 }
-
+tr:nth-child(even) {
+  background-color: #6699ff;
+}
+table, th, td {
+  border: 1px solid;
+}
 
 
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="https://kit.fontawesome.com/5ea9d4d037.js" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="mystyles.css">
  </head>
  <body>
    <div id = "mygrid">
@@ -136,7 +146,8 @@ wordDisp {
     </p>
     </span>
     <span id = "area4">
-<table class = "wordDisp">
+      <div id="area4-table"></div>
+<!--<table class = "wordDisp">
   <thead>
   </thead>
   <tbody>
@@ -193,20 +204,22 @@ wordDisp {
       <th>Fall 2022</th>
     </tr>
   </tbody>
-</table>
+</table>-->
+
 </span>
     <span id = "area5">
       <img src="https://i.stack.imgur.com/q1mnc.png" alt="Assembly Language" class = "center">
     </span>
     <span id = "area6">
-      <ul>
+      <div id="area6-table"></div>
+      <!--  <ul>
         <li><a href = "https://www.appliedinnovation.com" ><abbr title="Applied Innovation">ApIn
         </abbr> </a>
         </li>
         <li><a href = "https://www.gvsu.edu" ><abbr title="Grand Valley State University">GVSU
         </abbr> </a>
         </li>
-      </ul>
+      </ul> -->
       
     </span>
     <span id = "area7">
@@ -224,14 +237,16 @@ Yet <b>Harry Potter</b> was still there, asleep at the moment, but not for long.
       </code>
    </p>
     </span>
-    <span id = "area8">
+    <div id="area8-table"></div> 
+   <!--  <span id = "area8">
       <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
       <a href = "https://github.com"><i class="fa-brands fa-github"></i></a>
       <a href = "https://www.google.com"><i class="fa-brands fa-google"></i></a>
       <a href = "https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
       <a href = "https://slack.com"><i class="fa-brands fa-slack"></i></a>
       <a href = "https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-    </span>
+    </span> -->
 	</div>
+  <script type="text/babel" src="mycode.ts"></script>
  </body>
 </html>
